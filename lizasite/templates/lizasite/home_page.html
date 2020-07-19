@@ -1,0 +1,33 @@
+{% extends 'lizasite/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-container">
+  <div class="image-grid-container">
+    <div class="image-item">
+      <img class="image" alt="Decorative Image, About Me" src="{% static 'images/about_img.jpeg' %}"/>
+      <a href="/about">
+      <div id="overlay" class="overlay">
+        <h3 class="text"><em>About</em></h3>
+      </div>
+      </a>
+    </div>
+    <div class="image-item">
+      <img class="image" alt="Decorative Image, My Writing" src="{% static 'images/writing_img.jpeg' %}"/>
+      <a href="/articles">
+      <div id="overlay" class="overlay">
+        <h3 class="text"><em>Writing</em></h3>
+      </div>
+      </a>
+    </div>
+    <div class="image-item">
+      <img class="image" alt="Decorative Image, Contact Me" src="{% static 'images/contact_img.jpg' %}"/>
+      <a href="/design">
+      <div id="overlay" class="overlay">
+        <h3 class="text"><em>Contact</em></h3>
+      </div>
+      </a>
+    </div>
+  </div>
+  </div>
+{% endblock %}
